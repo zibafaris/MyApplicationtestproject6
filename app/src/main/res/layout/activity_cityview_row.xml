@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="#FFF"
+    android:id="@+id/card_view"
+    android:layout_gravity="center_horizontal"
+    tools:context=".cityview_row">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/tvImgVi"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layout_weight="0.3"
+            android:paddingTop="1dp"
+            android:paddingLeft="5dp"
+            android:src="@drawable/bulldericon"
+            android:text="TextView" />
+        <TextView
+            android:id="@+id/txtPlot"
+            android:background="@drawable/custome_border"
+            android:layout_margin="5dp"
+            android:textSize="14dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="0.7"
+            android:text="City"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:background="#FF5722"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
